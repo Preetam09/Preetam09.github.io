@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sai Preetam Jonnakuti</title>
+<meta name="description" content="AI engineer and M.S. AI student at Texas A&M. Three years building AI systems at Micron Technology; now working on robot navigation in crowds. Looking for Summer 2027 internships.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sai Preetam Jonnakuti">
+<meta property="og:description" content="AI engineer and M.S. AI student at Texas A&M. Three years building AI systems at Micron Technology; now working on robot navigation in crowds. Looking for Summer 2027 internships.">
+<meta property="og:url" content="https://preetam09.github.io/">
+<meta property="og:image" content="https://preetam09.github.io/assets/preetam.jpg">
+<meta name="color-scheme" content="light dark">
+<script>try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231458c4'/%3E%3Ccircle cx='24' cy='40' r='9' fill='%23fff'/%3E%3Cpath d='M30 34 L48 18' stroke='%23fff' stroke-width='5' stroke-linecap='round' stroke-dasharray='5 6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html">Sai Preetam Jonnakuti</a>
+    <div class="head-right">
+      <nav class="nav" aria-label="Pages"><a href="index.html" aria-current="page">Home</a><a href="experience.html">Experience</a><a href="projects.html">Projects</a><a href="about.html">About</a></nav>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode"><span>Dark</span></button>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+
+<section class="hero" aria-label="Introduction">
+  <img class="portrait" src="assets/preetam.jpg" alt="Portrait of Sai Preetam Jonnakuti" width="720" height="720">
+  <div class="hero-text">
+    <p class="role">AI engineer · M.S. Artificial Intelligence, Texas A&amp;M</p>
+    <h1>Hi, I'm Preetam.</h1>
+    <p class="lede">For three years at Micron Technology I built AI systems that procurement teams used every day, from a multi-agent assistant to analytics that informed about $400M in savings. Now I'm doing an M.S. in Artificial Intelligence at Texas A&amp;M, focused on robotics: helping robots move safely through crowds.</p>
+    <p class="status">Looking for Summer 2027 internships · available from May 2027</p>
+    <div class="actions">
+      <a class="btn primary" href="mailto:jmnp.saipreetam09@gmail.com">Email me</a>
+      <a class="btn" href="https://www.linkedin.com/in/sai-preetam-b53589212" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="experience.html">See my experience</a>
+    </div>
+  </div>
+</section>
+
+<section class="stats" aria-label="Results at a glance">
+  <div class="stat"><b>3 years</b><span>building AI and data systems at Micron Technology</span></div>
+  <div class="stat"><b>~$400M</b><span>in savings informed by analytics I built, over 12 months</span></div>
+  <div class="stat"><b>80% → 92%</b><span>answer accuracy of a multi-agent assistant, on ~600 real questions</span></div>
+  <div class="stat"><b>6 s → 1 s</b><span>assistant response time after I added caching</span></div>
+</section>
+
+<section aria-labelledby="demo-h">
+  <div class="section-head">
+    <p class="eyebrow">Live demo</p>
+    <h2 id="demo-h">What I'm working on: robots in crowds</h2>
+    <p>A robot in a crowd has to guess where people are about to walk, not just where they are now. My course project trains a graph-transformer model to make that guess. This demo is a much simpler version: it predicts each person's next 1.6 seconds with a straight line and steers around those predictions. Click anywhere to give the robot a new goal.</p>
+  </div>
+  <div class="demo-card">
+    <canvas id="demo" aria-label="Simulation: a robot predicts where pedestrians will walk and steers around them to reach a goal you choose"></canvas>
+    <div class="demo-bar">
+      <label>Crowd <input type="range" id="crowd" min="4" max="40" value="18" aria-label="Number of pedestrians"><output id="crowd-n">18</output></label>
+      <label><input type="checkbox" id="preds" checked> Show predictions</label>
+      <button type="button" id="play">Pause</button>
+      <span class="telemetry" aria-live="off">goals <b id="t-goals">0</b> · closest pass <b id="t-min">–</b> · speed <b id="t-speed">0.00 m/s</b></span>
+    </div>
+  </div>
+  <div class="legend">
+    <span><i class="lg-ped"></i>person</span>
+    <span><i class="lg-pred"></i>predicted path</span>
+    <span><i class="lg-bot"></i>robot, with its safety distance</span>
+    <span><i class="lg-goal"></i>goal</span>
+  </div>
+</section>
+
+<section aria-labelledby="work-h">
+  <div class="section-head">
+    <p class="eyebrow">Selected work</p>
+    <h2 id="work-h">Three things worth a closer look</h2>
+  </div>
+  <div class="rows">
+    <a class="row" href="experience.html#assistant">
+      <h3>A multi-agent assistant over enterprise data</h3><span class="when">Micron · 2024–2026</span>
+      <p>Answers questions across enterprise databases and documents, and can take actions as well. Accuracy raised from ~80% to 92%.</p>
+    </a>
+    <a class="row" href="experience.html#analytics">
+      <h3>Procurement analytics applications and dashboards</h3><span class="when">Micron · 2024–2026</span>
+      <p>Four analytics solutions I built and owned end to end. Two of them informed ~$400M in savings over 12 months.</p>
+    </a>
+    <a class="row" href="projects.html#trajectory">
+      <h3>Pedestrian trajectory prediction for robot navigation</h3><span class="when">Texas A&amp;M · in progress</span>
+      <p>A graph-transformer model plus control barrier functions, tested on the Robotarium robot testbed.</p>
+    </a>
+  </div>
+</section>
+
+  </div>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© 2026 Sai Preetam Jonnakuti · College Station, TX</span>
+    <nav aria-label="Elsewhere">
+      <a href="mailto:jmnp.saipreetam09@gmail.com">jmnp.saipreetam09@gmail.com</a>
+      <a href="https://www.linkedin.com/in/sai-preetam-b53589212" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Preetam09" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+<script src="assets/sim.js"></script>
+</body>
+</html>
