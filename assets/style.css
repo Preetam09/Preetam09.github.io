@@ -223,3 +223,29 @@ a.row:hover h3 { color: var(--accent); }
 .site-foot nav { display: flex; flex-wrap: wrap; gap: 6px 18px; }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* ---------- AI/SWE-style sections (home experience list, project cards, archive) ---------- */
+.xp-list { display: grid; border-top: 1px solid var(--line); }
+.xp { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 4px 28px; padding: 20px 0; border-bottom: 1px solid var(--line); }
+.xp .when { padding-top: 3px; }
+.xp-body { display: grid; gap: 8px; min-width: 0; }
+.xp-body p { color: var(--body); max-width: 68ch; }
+@media (max-width: 640px) { .xp { grid-template-columns: minmax(0, 1fr); } }
+.more { margin-top: 16px; font-weight: 700; }
+.more a { text-decoration: none; }
+.more a:hover { text-decoration: underline; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; }
+.summary { color: var(--muted); max-width: 70ch; }
+.job-head h2 { font-size: clamp(21px, 2.6vw, 26px); }
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--card); }
+.archive { width: 100%; border-collapse: collapse; font-size: 15.5px; }
+.archive th { text-align: left; font: 700 12.5px/1.4 var(--mono); text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); padding: 12px 16px; border-bottom: 1px solid var(--line); background: var(--surface); }
+.archive td { padding: 12px 16px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.archive tr:last-child td { border-bottom: 0; }
+.archive td:first-child { white-space: nowrap; }
+@media (max-width: 640px) {
+  .archive thead { display: none; }
+  .archive tr { display: grid; gap: 2px; padding: 12px 16px; border-bottom: 1px solid var(--line); }
+  .archive tr:last-child { border-bottom: 0; }
+  .archive td { padding: 0; border: 0; }
+}

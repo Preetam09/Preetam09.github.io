@@ -9,14 +9,14 @@
 <meta property="og:title" content="Experience · Sai Preetam Jonnakuti">
 <meta property="og:description" content="Three years at Micron Technology: a multi-agent assistant, procurement analytics that informed ~$400M in savings, and data platform work.">
 <meta property="og:url" content="https://preetam09.github.io/experience.html">
-<meta property="og:image" content="https://preetam09.github.io/assets/preetam.jpg">
+<meta property="og:image" content="https://preetam09.github.io/assets/preetam.jpg?v=c82f72fc">
 <meta name="color-scheme" content="light dark">
 <script>try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231458c4'/%3E%3Ccircle cx='24' cy='40' r='9' fill='%23fff'/%3E%3Cpath d='M30 34 L48 18' stroke='%23fff' stroke-width='5' stroke-linecap='round' stroke-dasharray='5 6'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=JetBrains+Mono:wght@400;500;700&display=swap">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/style.css?v=54db21f4">
 </head>
 <body>
 <header class="site-head">
@@ -33,43 +33,35 @@
 
 <section class="section-head" aria-label="Page introduction">
   <h1>Experience</h1>
-  <p class="lede">Three years at Micron Technology in Hyderabad, India, building AI and data systems for procurement teams. Promoted after 16 months.</p>
+  <p class="lede">Three years at Micron Technology in Hyderabad, India, building AI systems, analytics applications and data pipelines for procurement teams. Promoted after 16 months.</p>
 </section>
 
-<article class="job" aria-labelledby="dse-h">
+<article class="job" id="assistant" aria-labelledby="dse-h">
   <div class="job-head">
-    <h2 id="dse-h">Micron Technology</h2><span class="when">Nov 2024 – Aug 2026</span>
-    <p class="role">Data Science Engineer</p>
+    <h2 id="dse-h">Data Science Engineer · Micron Technology</h2><span class="when">Nov 2024 – Aug 2026</span>
   </div>
-
-  <h3 class="sub" id="assistant">Multi-agent assistant</h3>
+  <p class="summary">Built and owned AI and analytics systems for procurement teams, from data pipelines to deployment.</p>
   <ul class="points">
-    <li>Designed and shipped a <b>multi-agent assistant</b> over enterprise data with Google ADK and Snowflake Cortex, answering questions across databases (RAG-to-SQL) and documents (document RAG).</li>
-    <li>Raised answer accuracy from <b>~80% to 92%</b>, measured on a ~600-question validation set built with stakeholders.</li>
-    <li>Extended the agent to <b>take actions</b> as well as answer questions, cutting ticket-closing time by <b>~40%</b> for its 30–40 daily users.</li>
-    <li>Cut response time from <b>~6 s to ~1 s</b> with caching, plus connection pooling on the backend and parallel loading in the Angular frontend.</li>
-    <li>Connected agents across teams using the <b>Model Context Protocol (MCP)</b>, with role-based access control on data, and built reusable agent skills that other teams adopted as a template.</li>
+    <li>Designed and shipped a <b>multi-agent assistant</b> over enterprise data with Google ADK and Snowflake Cortex. It answers questions across databases (RAG-to-SQL) and documents, and can act on tickets, with agents across teams connected over the <b>Model Context Protocol (MCP)</b>.</li>
+    <li>Raised answer accuracy from <b>~80% to 92%</b> on a ~600-question validation set built with stakeholders, and cut ticket-closing time by <b>~40%</b> for its 30–40 daily users.</li>
+    <li>Cut response time from <b>~6 s to ~1 s</b> with caching, connection pooling and parallel loading in the Angular frontend.</li>
+    <li>Built and owned <b>four procurement analytics solutions</b> (pricing, cost, spend and material planning) using price-variance analysis, classification and time-series forecasting. Two of them informed <b>~$400M in savings</b> over 12 months.</li>
+    <li>Set up CI/CD to <b>Kubernetes</b> and data pipelines on GCP, and presented my work to the directors and senior director of my organization.</li>
   </ul>
-
-  <h3 class="sub" id="analytics">Analytics and deployment</h3>
-  <ul class="points">
-    <li>Built and owned <b>four procurement analytics solutions</b> end to end, covering pricing, cost, spend and material planning, using price-variance analysis, classification models and time-series forecasting. Two of them informed <b>~$400M in savings</b> over 12 months.</li>
-    <li>Delivered them as web applications and dashboards with Python, FastAPI, Angular and <b>Tableau</b> on GCP.</li>
-    <li>Set up CI/CD pipelines deploying backend APIs to <b>Kubernetes</b>, and data pipelines with Cloud Build, Cloud Run, Cloud Scheduler and Pub/Sub.</li>
-    <li>Presented my work to the <b>directors and senior director</b> of my organization.</li>
-  </ul>
+  <div class="tags"><span>Python</span><span>Google ADK</span><span>Snowflake Cortex</span><span>MCP</span><span>RAG</span><span>FastAPI</span><span>Angular</span><span>Tableau</span><span>GCP</span><span>Kubernetes</span><span>CI/CD</span></div>
 </article>
 
 <article class="job" aria-labelledby="adse-h">
   <div class="job-head">
-    <h2 id="adse-h">Micron Technology</h2><span class="when">Jul 2023 – Oct 2024</span>
-    <p class="role">Associate Data Science Engineer</p>
+    <h2 id="adse-h">Associate Data Science Engineer · Micron Technology</h2><span class="when">Jul 2023 – Oct 2024</span>
   </div>
+  <p class="summary">Document AI and data platform work, ending in a promotion.</p>
   <ul class="points">
     <li>Built a <b>document-intelligence pipeline</b> that extracts structured data from contracts using OCR and an LLM, at <b>80–90%</b> validated accuracy, saving <b>~150 hours per quarter</b> of manual work across teams.</li>
     <li>Helped migrate ~135 tables, views and stored procedures from MSSQL to <b>Snowflake</b> as part of a team, finishing in <b>6 months</b> against a 12-month plan.</li>
-    <li>Then migrated the reporting scripts and Tableau dashboards for <b>~30 solutions</b> onto Snowflake <b>on my own</b> in 2 months, with zero reporting downtime. Recognized for the migration work.</li>
+    <li>Migrated the reporting scripts and Tableau dashboards for <b>~30 solutions</b> onto Snowflake <b>on my own</b> in 2 months, with zero reporting downtime. Recognized for the migration work.</li>
   </ul>
+  <div class="tags"><span>Python</span><span>OCR</span><span>LLMs</span><span>Snowflake</span><span>MSSQL</span><span>SQL</span><span>Tableau</span></div>
 </article>
 
 <aside class="note" aria-labelledby="how-h">
@@ -93,6 +85,6 @@
     </nav>
   </div>
 </footer>
-<script src="assets/site.js"></script>
+<script src="assets/site.js?v=a3a395b4"></script>
 </body>
 </html>

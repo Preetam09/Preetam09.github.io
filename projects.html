@@ -9,14 +9,14 @@
 <meta property="og:title" content="Projects · Sai Preetam Jonnakuti">
 <meta property="og:description" content="Pedestrian trajectory prediction at Texas A&M, and earlier personal and university projects.">
 <meta property="og:url" content="https://preetam09.github.io/projects.html">
-<meta property="og:image" content="https://preetam09.github.io/assets/preetam.jpg">
+<meta property="og:image" content="https://preetam09.github.io/assets/preetam.jpg?v=c82f72fc">
 <meta name="color-scheme" content="light dark">
 <script>try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231458c4'/%3E%3Ccircle cx='24' cy='40' r='9' fill='%23fff'/%3E%3Cpath d='M30 34 L48 18' stroke='%23fff' stroke-width='5' stroke-linecap='round' stroke-dasharray='5 6'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=JetBrains+Mono:wght@400;500;700&display=swap">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/style.css?v=54db21f4">
 </head>
 <body>
 <header class="site-head">
@@ -33,55 +33,41 @@
 
 <section class="section-head" aria-label="Page introduction">
   <h1>Projects</h1>
-  <p class="lede">Robotics work at Texas A&amp;M and earlier personal and university projects. My work at Micron is on the <a href="experience.html">Experience</a> page.</p>
+  <p class="lede">Course, personal and university projects. My work at Micron is on the <a href="experience.html">Experience</a> page.</p>
 </section>
 
-<section aria-labelledby="tamu-h">
-  <div class="section-head"><p class="eyebrow">Now</p><h2 id="tamu-h">At Texas A&amp;M</h2></div>
-  <div class="stack">
+<section aria-labelledby="featured-h">
+  <div class="section-head"><p class="eyebrow">Featured</p><h2 id="featured-h">Featured projects</h2></div>
+  <div class="cards">
     <article class="proj feature" id="trajectory">
-      <div class="proj-head"><h3>Pedestrian trajectory prediction for robot navigation</h3><span class="pill">In progress</span></div>
+      <div class="proj-head"><h3>Pedestrian trajectory prediction</h3><span class="pill">In progress</span></div>
       <span class="when">CSCE 689 Multi-Robot Systems · Sep 2026 – present</span>
-      <p>A graph-transformer model that predicts where pedestrians will walk, so a robot can plan a safe path through a crowd. I benchmark prediction error (ADE/FDE) on the ETH/UCY datasets, keep the robot at a safe distance with control barrier functions, and test it on the Robotarium robot testbed, where I also measure how much it costs the robot to finish its task. Results will be added here when the project finishes. The demo on the home page is a much simpler version of the idea.</p>
+      <p>A graph-transformer model that predicts where pedestrians will walk, so a robot can plan a safe path through a crowd. Benchmarked on the ETH/UCY datasets (ADE/FDE), with control barrier functions for safety, tested on the Robotarium robot testbed. Results will be added when the project finishes.</p>
       <div class="tags"><span>Graph transformers</span><span>ETH/UCY</span><span>ADE/FDE</span><span>Control barrier functions</span><span>Robotarium</span></div>
-    </article>
-    <p class="muted">Also in progress this semester: training a CLIP vision-language model, and building a harness to improve the performance of AI agents. Details once they're done.</p>
-  </div>
-</section>
-
-<section aria-labelledby="earlier-h">
-  <div class="section-head"><p class="eyebrow">Earlier</p><h2 id="earlier-h">Other projects</h2></div>
-  <div class="grid-2">
-    <article class="proj">
-      <div class="proj-head"><h3>Road accident dashboard</h3></div>
-      <span class="when">Personal project · 2026</span>
-      <p>An interactive Tableau dashboard over ~660K road-accident records: total accidents and casualties by severity with trend sparklines, broken down by vehicle type, road type, road surface, weather and location.</p><p><a href="https://github.com/Preetam09/Tableau_Projects" target="_blank" rel="noopener">View on GitHub</a></p>
-      <div class="tags"><span>Tableau</span><span>Data visualization</span></div>
     </article>
     <article class="proj">
       <div class="proj-head"><h3>Agent tracing</h3></div>
       <span class="when">Hugging Face Agents Course · 2025</span>
       <p>Added tracing to an LLM agent: which tool and which sub-agent ran, how long each took, and where each piece of information came from. Completed the course, including the final assignment.</p>
-      <div class="tags"><span>LLM agents</span><span>Tracing</span><span>Python</span></div>
+      <div class="tags"><span>Python</span><span>LLM agents</span><span>Tracing</span></div>
     </article>
     <article class="proj">
-      <div class="proj-head"><h3>Voice-controlled car</h3></div>
-      <span class="when">NIT Rourkela · Jan – Apr 2022 · team of two</span>
-      <p>I built the car's hardware and its embedded Arduino code in C/C++, including ultrasonic obstacle detection. My teammate built the app that sends the voice commands.</p>
-      <div class="tags"><span>Arduino</span><span>C/C++</span><span>Ultrasonic sensors</span></div>
+      <div class="proj-head"><h3>Road accident dashboard</h3></div>
+      <span class="when">Personal project · 2026</span>
+      <p>An interactive Tableau dashboard over ~660K road-accident records: accidents and casualties by severity with trend sparklines, broken down by vehicle type, road type, surface, weather and location.</p><p><a href="https://github.com/Preetam09/Tableau_Projects" target="_blank" rel="noopener">View on GitHub</a></p>
+      <div class="tags"><span>Tableau</span><span>Data visualization</span></div>
     </article>
-    <article class="proj">
-      <div class="proj-head"><h3>Real-time Instagram sentiment</h3></div>
-      <span class="when">May – Jul 2022</span>
-      <p>A Python NLP pipeline that classifies the sentiment of Instagram posts in real time.</p>
-      <div class="tags"><span>Python</span><span>NLP</span></div>
-    </article>
-    <article class="proj">
-      <div class="proj-head"><h3>Number-plate recognition</h3></div>
-      <span class="when">NIT Rourkela</span>
-      <p>YOLO object detection and OpenCV reading licence plates, tested on publicly available traffic video.</p>
-      <div class="tags"><span>YOLO</span><span>OpenCV</span><span>Python</span></div>
-    </article>
+  </div>
+  <p class="muted" style="margin-top: 16px">Also in progress this semester: training a CLIP vision-language model, and building a harness to improve the performance of AI agents. Details once they're done.</p>
+</section>
+
+<section aria-labelledby="archive-h">
+  <div class="section-head"><p class="eyebrow">Archive</p><h2 id="archive-h">Earlier projects</h2></div>
+  <div class="table-wrap">
+    <table class="archive">
+      <thead><tr><th>Year</th><th>Project</th><th>Built with</th><th>Link</th></tr></thead>
+      <tbody><tr><td class="when">2026</td><td>This website</td><td class="muted">Python static-site build, HTML/CSS, JavaScript canvas demo</td><td><a href="https://github.com/Preetam09/Preetam09.github.io" target="_blank" rel="noopener">Code</a></td></tr><tr><td class="when">2022</td><td>Real-time Instagram sentiment analysis</td><td class="muted">Python, NLP</td><td></td></tr><tr><td class="when">2022</td><td>Voice-controlled car (team of two: I built the hardware and embedded code)</td><td class="muted">Arduino, C/C++, ultrasonic sensors</td><td></td></tr><tr><td class="when">2019–23</td><td>Number-plate recognition on public traffic video</td><td class="muted">Python, YOLO, OpenCV</td><td></td></tr></tbody>
+    </table>
   </div>
 </section>
 
@@ -97,6 +83,6 @@
     </nav>
   </div>
 </footer>
-<script src="assets/site.js"></script>
+<script src="assets/site.js?v=a3a395b4"></script>
 </body>
 </html>
